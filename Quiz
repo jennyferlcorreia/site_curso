@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gatos - quiz</title>
+        <meta name="quiz" content = quiz "sobre gatos fofos">
+    </head>
+
+    <body> 
+        <header>
+            <h1>Gatos</h1>
+            <p1>Conheça tudo sobre gatos!</p1>
+            <nav>
+                <ul>
+                    <li><a href="especies.html">ESPÉCIES</a></li>
+                    <li><a href="curiosidades.html">CURIOSIDADES</a></li>
+                    <li><a href="fotos.html">FOTOS</a></li>
+                    <li><a href="quiz.html">QUIZ</a></li>
+                </ul>
+            </nav >
+        </header>
+        <main>
+            <section>
+                <p>Testando conhecimentos sobre gatos</p>
+                <h2>Quiz</h2>
+            </section>
+            <section>
+                <h2> Qual sua espécie de gato?</h2>
+                <form>
+                    <input type="radio" id="p1a"><label for="p1a"> A) Siamês</label><br>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
