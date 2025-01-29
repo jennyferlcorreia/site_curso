@@ -7,18 +7,16 @@
 
     <body> 
         <header>
-            <h1>Gatos</h1>
-            <p1>Conheça tudo sobre gatos!</p1>
+            <a href="index.html"><img src="assets/pngtree-hand-lettering-cat-lover-with-cute-heart-shape-pink-color-png-image_6508274-removebg-preview.png"</a>
+            <p1 id="frase-principal">Conheça tudo sobre gatos!</p1>
             <nav>
-                <ul>
-                    <li><a href="especies.html">ESPÉCIES</a></li>
-                    <li><a href="curiosidades.html">CURIOSIDADES</a></li>
-                    <li><a href="fotos.html">FOTOS</a></li>
-                    <li><a href="quiz.html">QUIZ</a></li>
-                </ul>
+                <a href="especies.html">ESPÉCIES</a>
+                <a href="curiosidades.html">CURIOSIDADES</a>
+                <a href="fotos.html">FOTOS</a>
+                <a href="quiz.html">QUIZ</a>
             </nav >
         </header>
-        <main>
+        <main class="main-container">
             <section>
                 <p>Testando seus conhecimentos sobre gatos</p>
                 <h2>Quiz</h2>
@@ -27,13 +25,32 @@
                 <img src="assets/prova.jpg" alt="Foto de gato fazendo prova">
             </figure>
         </article>
-            <section>
+            <section class="main-block">
                 <h2> Você tem animal de estimação?</h2>
                 <form>
                     <input type="radio" id="p1a"><label for="p1a"> A) Sim, amo animais!</label><br>
                     <input type="radio" id="p1b"><label for="p1a"> B) Não, infelizmente.</label><br>
                 </form>
             </section>
+            <section class="main-block">
+                <h2>Qual a media da vida de um gato?</h2>
+                <form>
+                    <input type="radio" id="p2a"><label for="p2c"> A) 5 anos;</label><br>
+                    <input type="radio" id="p2b"><label for="p2c"> B) 5 a 10 anos;</label><br>
+                    <input type="radio" id="p2c"><label for="p2c"> C) 13 A 20 anos;</label><br>
+                    <input type="radio" id="p2d"><label for="p2c"> D) 10 a 50 anos.</label><br>
+                </form>
+            </section>
+            <section class="main-block">
+                <h2>Qual o período de gestação de um gato fêmea?</h2>
+                <form>
+                    <input type="radio" id="p3a"><label for="p3d"> A) 9 mês;</label><br>
+                    <input type="radio" id="p3b"><label for="p3d"> B) 1 ano;</label><br>
+                    <input type="radio" id="p3c"><label for="p3d"> C) 30 dias;</label><br>
+                    <input type="radio" id="p3d"><label for="p3d"> D) 65 dias.</label><br>
+                </form>
+            </section>
+            <p id="topo"><a href="quiz.html">Volte ao topo da página!</a></p>
         </main>
         <footer></footer>
     </body>
