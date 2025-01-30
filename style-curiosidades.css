@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Cabin", serif;
+    color:#b96571;
+    background-color:#edfaff;
+    font-weight: 400;
+}
+
+header{
+    background:linear-gradient(to right, #ffb8c2, #94c4d8);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+    color: #47899c;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.418)
+    ;
+}
+nav a:hover {
+    color: #1e4f5e;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#frase-principal {
+    color: #b96571;
+    font-weight: 600;
+    letter-spacing: 1px; 
+    text-shadow: 0px 0px 8px rgba(54, 21, 27, 0.418);
+    font-size: 1.1rem;
+}
+h1{
+    color: #5fb4ce;
+    font-size: 2rem;
+    padding: 20px;
+}
+#topo {
+    padding-top: 40px;
+}
+
+#topo a {
+    color:#b96571;
+    text-decoration: none;
+}
+
+#topo a:hover {
+    color:#813843;
+}
+
+footer{
+    background:linear-gradient(to right, #ffb8c2, #94c4d8);
+    text-align: center;
+    padding: 10px 0;
+}
+small{
+    color:#813843;
+}
