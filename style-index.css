@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: "Cabin", serif;
-    color:#b96571;
-    background-color:#d6f0fa;
+    color: #ba9df4;
+    background-color: #ffeefa;
     font-weight: 400;
 }
 
 header{
-    background:linear-gradient(to right, #ffb8c2, #94c4d8);
-    padding: 20px 0;
+    position: relative;
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
+    padding: 100px 0 20px; /* Aumentei o padding superior para separar o GIF */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -23,67 +23,79 @@ header{
     align-items: center;
 }
 
-header img {
-    width: 150px;
+.header-gif {
+    position: absolute;
+    top: -5px; /* Levantei o GIF para que não sobreponha outros elementos */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
     height: auto;
-    margin-bottom: 20px;
+    z-index: 10;
 }
 
 nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
+    padding: 30px 0; /* Ajustei o padding para melhor espaçamento */
 }
 
 nav a {
-    margin: 0 20px;
+    margin: 0 30px; /* Aumentei a margem para espaçar melhor */
     position: relative;
     text-decoration: none;
-    color: #47899c;
+    color: #646464;
     font-weight: bold;
-    font-size: 16px;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.418)
-    ;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.418);
+    transition: all 0.5s;
 }
+
 nav a:hover {
-    color: #1e4f5e;
+    color: #303030;
 }
+
 main {
     padding: 20px;
     text-align: center;
 }
 
 #frase-principal {
-    color: #b96571;
+    color: #646464;
     font-weight: 600;
-    letter-spacing: 1px; 
-    text-shadow: 0px 0px 8px rgba(54, 21, 27, 0.418);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
     font-size: 1.1rem;
 }
+
 h1{
-    color: #5fb4ce;
+    color: #9b7ad3;
     font-size: 2rem;
     padding: 20px;
 }
+
 .main-container{
     display: flex;
-    gap:20px;
+    gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
 .main-container h2{
-    color:#b96571;
+    color: #9b7ad3;
 }
 
 .main-container p{
-    color:#13191b;
+    color: #646464;
     padding: 10px;
     font-weight: 450;
 }
 
 .main-block{
-    background-color: #b3d6e5;
+    background-color: #f0f8b4;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(54, 21, 27, 0.418);
     display: flex;
@@ -93,9 +105,10 @@ h1{
     align-items: center;
     padding: 20px;
 }
+
 .main-block a{
-    color:#d44f63;
-    background-color: #7ea3b3;
+    color: #9b7ad3;
+    background-color: #d4bcf4;
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 15px;
@@ -103,9 +116,10 @@ h1{
     font-weight: 500;
     transition: all 0.5s;
 }
+
 .main-block a:hover{
-    color: #7ea3b3;
-    background-color: #d44f63;
+    color: #d4bcf4;
+    background-color: #9b7ad3;
 }
 
 #topo {
@@ -113,19 +127,25 @@ h1{
 }
 
 #topo a {
-    color:#b96571;
+    color: #8d78af;
     text-decoration: none;
 }
 
 #topo a:hover {
-    color:#813843;
+    color: #735d97;
 }
 
 footer{
-    background:linear-gradient(to right, #ffb8c2, #94c4d8);
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
     text-align: center;
     padding: 10px 0;
 }
+
 small{
-    color:#813843;
+    color: #646464;
+}
+@media (max-whidth: 160px){
+    header img{
+        width: 100%;
+    }
 }

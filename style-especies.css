@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: "Cabin", serif;
-    color:#b96571;
-    background-color:#edfaff;
+    color:  #646464;
+    background-color: #ffeefa;
     font-weight: 400;
 }
+
 header{
-    background:linear-gradient(to right, #ffb8c2, #94c4d8);
-    padding: 20px 0;
+    position: relative;
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
+    padding: 100px 0 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -22,88 +23,139 @@ header{
     align-items: center;
 }
 
-header img {
-    width: 150px;
+.header-gif {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
     height: auto;
-    margin-bottom: 20px;
+    z-index: 10;
 }
 
-nav{
+.titulo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
+    padding: 30px 0;
 }
 
 nav a {
-    margin: 0 20px;
+    margin: 0 30px;
     position: relative;
     text-decoration: none;
-    color: #47899c;
+    color: #646464;
     font-weight: bold;
-    font-size: 16px;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.418)
-    ;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.418);
+    transition: all 0.5s;
 }
+
 nav a:hover {
-    color: #1e4f5e;
+    color: #303030;
 }
+
 main {
     padding: 20px;
     text-align: center;
 }
-
 #frase-principal {
-    color: #b96571;
+    color: #646464;
     font-weight: 600;
-    letter-spacing: 1px; 
-    text-shadow: 0px 0px 8px rgba(54, 21, 27, 0.418);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
     font-size: 1.1rem;
-}
-h1{
-    color: #5fb4ce;
-    font-size: 2rem;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
-h2{
-    color:#813843;
-    padding:15px 0;
+.conteudos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
 }
 
-.topicos{
-    text-align: justify;
-}
 
-figure{
-    margin-bottom: 15px;
+.conteudos a {
     text-align: center;
+    text-decoration: none;
+    color: #8666bd;
+    background-color: #bc9cf4;
+    padding: 5px 8px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    font-weight: 400;
+    white-space: nowrap;
 }
 
-figure img{
-    width: 550px;
-    height: auto;
+.conteudos a:hover {
+    color: #0D0D0D;
+    background-color: #735d97;
+}
+
+.especies-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    margin: 0 auto;
+
+}
+.cast-member {
+    flex: 1 1 300px;
     border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    background-color: #ebd2aa;
 }
 
-.tabela{
-    width:100%;
+
+.cast-member img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.cast-member img:hover {
+    transform: scale(1.1);
+}
+
+.cast-member details {
+    color: #735d97;
+}
+
+
+.table-responsive {
+    width: 100%;
     overflow-x: auto;
 }
 
-table{
+table {
     border-collapse: collapse;
-    text-align: center
+    text-align: center;
 }
 
-th{
-    background-color:#94c4d8;
-    color:#b96571;
-    padding:0.6rem;   
+th {
+    background-color: #bc9cf4;;
+    color: #fff2e1;
+    padding: 0.6rem;
 }
 
 td {
-    background-color:#ffb8c2;
+    background-color: #f0dab6;
     padding: 0.6rem;
+}
+
+td a {
+    text-decoration: none;
+    color: #bc9cf4;
+    font-weight: 700;
+}
+
+td a:hover {
+    color: #8666bd;
 }
 
 #topo {
@@ -111,19 +163,27 @@ td {
 }
 
 #topo a {
-    color:#b96571;
+    color: #9f7fd8;
     text-decoration: none;
 }
 
 #topo a:hover {
-    color:#813843;
+    color: #8666bd;
 }
 
-footer{
-    background:linear-gradient(to right, #ffb8c2, #94c4d8);
+footer {
+    background: linear-gradient(to right, #f0f8b4, #bc9cf4);
     text-align: center;
     padding: 10px 0;
 }
-small{
-    color:#813843;
+
+small {
+    color: #646464;
+}
+@media (max-width: 600px) {
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 }
